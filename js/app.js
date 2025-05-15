@@ -1,7 +1,9 @@
 //Re-reviewed Intro to JS, Arrays, Objects, Intro to DOM, and DOM Events as of 5/4/2025 
 //and will be completing this lesson with my newly re-reviewed understanding of this material.
 
+
 /*-------------------------------- Constants --------------------------------*/
+
 const winningCombos = [
     [0, 1, 2], // top row
     [3, 4, 5], // middle row
@@ -13,18 +15,24 @@ const winningCombos = [
     [2, 4, 6]  // diagonal top-right to bottom-left
   ];
   
+
   /*---------------------------- Variables (state) ----------------------------*/
+
   let board;
   let turn;
   let winner;
   let tie;
   
+
   /*------------------------ Cached Element References ------------------------*/
+
   const squareEls = document.querySelectorAll('.sqr');
   const messageEl = document.getElementById('message');
   const resetBtnEl = document.getElementById('reset');
   
+
   /*-------------------------------- Functions --------------------------------*/
+
   function init() {
     board = ['', '', '', '', '', '', '', '', ''];
     turn = 'X';
@@ -91,7 +99,9 @@ const winningCombos = [
     turn = turn === 'X' ? 'O' : 'X';
   }
   
+
 /*----------------------------- Event Listeners -----------------------------*/
+
   squareEls.forEach(square => {
     square.addEventListener('click', handleClick);
   });
@@ -114,7 +124,17 @@ const winningCombos = [
 
 
 
+
+
+
+
+
+
+
+
+
   
+
 
 /*------------------------------Code Graveyard ------------------------------*/
 
